@@ -1,0 +1,288 @@
+/* Font and Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lexend Exa', sans-serif;
+}
+
+body {
+  background-color: #C0C0C0; /* Light gray background */
+  color: #222222; /* Primary text color */
+}
+
+/* Sticky Navbar */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #C0C0C0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  max-width: 50px;
+}
+
+.navbar .menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+}
+
+.line {
+  width: 12px;
+  height: 3px;
+  background-color: #555555;
+  transition: all 0.3s ease;
+}
+
+.menu-button.active .line1 {
+  transform: rotate(45deg) translateY(6px);
+}
+
+.menu-button.active .line2 {
+  transform: rotate(-45deg) translateY(-6px);
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #484848;
+  border-radius: 5px;
+  z-index: 10;
+  flex-direction: column;
+}
+
+.menu a {
+  display: block;
+  padding: 10px 15px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.menu-button.active + .menu {
+  display: flex;
+}
+
+/* Parallax Section */
+.parallax {
+  background: url('hera-grey-white-pillar-9x16.jpg') no-repeat center center;
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.parallax-title {
+  font-size: 100px;
+  color: #FFFFFF;
+  font-weight: 700;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Product Showcase */
+.products-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 30px;
+}
+
+.product {
+  position: relative;
+  transition: opacity 0.3s ease;
+}
+
+.product-image {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.buy-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #C0C0C0;
+  color: #222222;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.product:hover .buy-button {
+  opacity: 1;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #C0C0C0;
+  color: #222222;
+  font-size: 0.9rem;
+}
+/* Font and Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Exa', sans-serif;
+}
+
+body {
+    background-color: #C0C0C0; /* Light gray background */
+    color: #222222; /* Primary text color */
+}
+
+/* Sticky Navbar */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #C0C0C0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    max-width: 50px;
+}
+
+.navbar .menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+
+.line {
+    width: 12px;
+    height: 3px;
+    background-color: #555555;
+    transition: all 0.3s ease;
+}
+
+.menu-button.active .line1 {
+    transform: rotate(45deg) translateY(6px);
+}
+
+.menu-button.active .line2 {
+    transform: rotate(-45deg) translateY(-6px);
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #484848;
+    border-radius: 5px;
+    z-index: 10;
+    flex-direction: column;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.menu-button.active + .menu {
+    display: flex;
+}
+
+/* Parallax Section */
+.parallax {
+    background: url('hera-grey-white-pillar-9x16.jpg') no-repeat center center;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.parallax-title {
+    font-size: 50px;
+    color: #FFFFFF;
+    font-weight: 700;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Product Showcase */
+.products-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 30px;
+}
+
+.product {
+    position: relative;
+    transition: opacity 0.3s ease;
+}
+
+.product-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.buy-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #C0C0C0;
+    color: #222222;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.product:hover .buy-button {
+    opacity: 1;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #C0C0C0;
+    color: #222222;
+    font-size: 0.9rem;
+}
